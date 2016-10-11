@@ -36,9 +36,9 @@ exports.seed = (knex, Promise) => {
         ),
         commands.createService({
           id: 5,
-          logoUrl: 'https://www.myvfix.com/wp-content/uploads/2016/03/printer-setup.png',
-          title: '',
-          description: ''
+          logoUrl: 'https://www.myvfix.com/wp-content/uploads/2016/03/pc-mac-support-300x300.png',
+          title: 'PC/MAC Support',
+          description: 'Wondering if it’s time to upgrade your PC or MAC? If you need a little help assessing your technology, this is what we do.'
           }
         ),
         commands.createService({
