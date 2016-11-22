@@ -16,14 +16,14 @@ exports.seed = (knex, Promise) => {
           },
           [
             {
-               "day": "sunday",
+               "day": "Sunday",
                "hours": [{
                   "end": "22:00",
                   "start": "08:00"
                }]
             },
             {
-               "day": "saturday",
+               "day": "Saturday",
                "hours": [{
                   "end": "22:00",
                   "start": "08:00"
@@ -43,14 +43,14 @@ exports.seed = (knex, Promise) => {
           },
           [
             {
-               "day": "monday",
+               "day": "Monday",
                "hours": [{
                   "end": "17:00",
                   "start": "11:00"
                }]
             },
             {
-               "day": "friday",
+               "day": "Friday",
                "hours": [{
                   "end": "20:00",
                   "start": "08:00"
@@ -70,14 +70,14 @@ exports.seed = (knex, Promise) => {
           },
           [
             {
-               "day": "tuesday",
+               "day": "Tuesday",
                "hours": [{
                   "end": "11:00",
                   "start": "4:00"
                }]
             },
             {
-               "day": "thursday",
+               "day": "Thursday",
                "hours": [{
                   "end": "18:00",
                   "start": "06:00"
@@ -86,7 +86,7 @@ exports.seed = (knex, Promise) => {
           ],
           [6,7,8]
         ),
-      
+
     ]) // closes out line 6
   }) //closes out line 5
 } // closes out line 2
