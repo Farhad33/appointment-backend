@@ -7,9 +7,19 @@ router.get('/', (request, response, next) => {
   response.send("home Page")
 })
 
+
 router.get('/freeSlots/:serviceId', (request, response, next) => {
   const serviceId = request.params.serviceId
   queries.getFreeSlotsByServiceId(serviceId)
+    .then(freeSlots => {
+      response.json(freeSlots)
+    })
+})
+
+router.get('/freeSlots/:serviceId/:date', (request, response, next) => {
+  const date = request.params.date
+  const serviceId = request.params.serviceId
+  queries.getFreeSlotsByServiceId(serviceId, date)
     .then(freeSlots => {
       response.json(freeSlots)
     })
@@ -51,5 +61,3 @@ router.get('/user/:id', (request, response, next) => {
 
 
 export default router
-
-
